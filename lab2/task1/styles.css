@@ -1,0 +1,147 @@
+/* Общие настройки */
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f0f2f5;
+  }
+  
+  /* Контейнер двух колонок */
+  .main-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	min-height: 80vh;
+	gap: 50px;
+	padding: 50px 20px;
+	flex-wrap: wrap;
+  }
+  
+  /* Левая колонка */
+  .left-block {
+	max-width: 500px;
+  }
+  
+  #facebookcolor {
+	color: #1877f2;
+	font-size: 60px;
+	font-weight: bold;
+	margin: 0;
+  }
+  
+  #downface {
+	font-size: 28px;
+	line-height: 1.4;
+	margin-top: 20px;
+  }
+  
+  /* Правая колонка */
+  .right-block .login-card {
+	background-color: white;
+	padding: 30px 40px;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+	min-width: 350px;
+  }
+  
+  /* Поля формы */
+  .login-card input {
+	width: 100%;
+	padding: 12px;
+	margin: 8px 0;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+  }
+  
+  /* Кнопки */
+  .login-card button {
+	width: 100%;
+	padding: 12px;
+	margin-top: 8px;
+	font-size: 18px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+  }
+  
+  .login-card button[type="submit"] {
+	background-color: #1877f2;
+	color: white;
+  }
+  
+  .login-card button[type="submit"]:hover {
+	background-color: #165cdb;
+  }
+  
+  .create-account {
+	background-color: #42b72a;
+	color: white;
+  }
+  
+  .create-account:hover {
+	background-color: #36a420;
+  }
+  
+  /* Ссылка "Забыли пароль?" */
+  .forgot {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	color: #1877f2;
+	font-size: 14px;
+	text-decoration: none;
+  }
+  
+  .forgot:hover {
+	text-decoration: underline;
+  }
+  
+  /* Разделитель */
+  .login-card hr {
+	margin: 20px 0;
+	border: 0.5px solid #ddd;
+  }
+  
+  /* Текст под формой */
+  .create-page {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 15px;
+	color: #1c1e21;
+  }
+  
+  /* Футер языки */
+  .languages {
+	text-align: center;
+	margin-top: 50px;
+  }
+  
+  .languages a, .languages button {
+	margin: 0 6px;
+	color: #65676b;
+	text-decoration: none;
+	font-size: 14px;
+  }
+  
+  .languages a:hover {
+	text-decoration: underline;
+  }
+  
+  /* Футер ссылки */
+  .footer {
+	text-align: center;
+	margin-top: 20px;
+	color: #65676b;
+	font-size: 12px;
+  }
+  
+  .footer a {
+	margin: 0 5px;
+	color: #65676b;
+	text-decoration: none;
+  }
+  
+  .footer a:hover {
+	text-decoration: underline;
+  }
+  
