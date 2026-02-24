@@ -1,0 +1,36 @@
+<div class="card">
+  <div class="image-container">
+    <img [src]="product.image" [alt]="product.name">
+  </div>
+  
+  <div class="content">
+    <h3>{{ product.name }}</h3>
+    <p class="description">{{ product.description }}</p>
+    
+    <div class="rating">
+      <span *ngFor="let star of getStars()" class="star">
+        <span *ngIf="star === 'full'">★</span>
+        <span *ngIf="star === 'half'">⯨</span>
+        <span *ngIf="star === 'empty'">☆</span>
+      </span>
+      <span class="rating-value">{{ product.rating }}</span>
+    </div>
+    
+    <div class="price">{{ formatPrice(product.price) }}</div>
+    
+    <div class="actions">
+      <a [href]="product.link" target="_blank" class="btn btn-primary">
+        На Kaspi.kz
+      </a>
+      
+      <div class="share-buttons">
+        <button (click)="shareOnWhatsApp()" class="btn btn-whatsapp">
+          WhatsApp
+        </button>
+        <button (click)="shareOnTelegram()" class="btn btn-telegram">
+          Telegram
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

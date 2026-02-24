@@ -1,0 +1,27 @@
+<div class="app-container">
+  <header>
+    <h1>Интернет-магазин Kaspi.kz</h1>
+  </header>
+
+  <div class="categories">
+    @for (cat of categories; track cat.id) {
+      <button 
+        class="category-btn"
+        [class.active]="selectedCategoryId === cat.id"
+        (click)="selectCategory(cat.id)">
+        {{ cat.name }}
+      </button>
+    }
+  </div>
+
+  <main>
+    @if (selectedCategoryId) {
+      <app-product-list [products]="filteredProducts" />
+    } @else {
+      <div class="welcome-message">
+        <h2>Добро пожаловать!</h2>
+        <p>Выберите категорию товаров</p>
+      </div>
+    }
+  </main>
+</div>
