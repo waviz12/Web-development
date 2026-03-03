@@ -1,0 +1,10 @@
+/node_modules
+/dist
+/tmp
+/out-tsc
+.angular/
+.idea
+.vscode
+*.swp
+.DS_Store
+Thumbs.db
